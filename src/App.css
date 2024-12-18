@@ -1,0 +1,174 @@
+/* General container for the task list */
+.app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-section button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+/* Task list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+span {
+  flex: 1;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Edit/Save/Delete button container */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the icons */
+button:hover {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Icons styling */
+button.edit {
+  color: #ffa500; /* Orange for edit */
+}
+
+button.delete {
+  color: #f44336; /* Red for delete */
+}
+
+button.edit:hover {
+  color: #e68a00;
+}
+
+button.delete:hover {
+  color: #d32f2f;
+}
+
+/* Save button */
+button.save {
+  padding: 8px 12px;
+  background-color: #9462fe;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.save:hover {
+  background-color: #3c3cf8;
+}
+
+button.save:focus {
+  outline: none;
+}
+
+/* Align to-do text to the left, icons to the right */
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.todo span {
+  flex-grow: 1;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.edit-delete-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.edit-delete-buttons button {
+  margin: 0;
+}
+
+/* Compact space between Edit and Delete buttons */
+.edit-delete-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+/* Ensure input section has focus styles */
+.input-section input:focus {
+  border-color: #4caf50;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
